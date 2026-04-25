@@ -1,0 +1,154 @@
+:root {
+  /* Colors */
+  --color-bg-main: #f7f1e9;
+  --color-text-main: #333333;
+  --color-text-muted: #555;
+  --color-primary: #9e4f5c;
+  --color-primary-light: #E6C8E6;
+  --color-white: #ffffff;
+  --color-border-light: #e2d9ce;
+
+  /*  Fonts */
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+
+  /*  Font sizes */
+  --fs-hero: 48px;
+  --fs-h1: 55px;
+  --fs-h2: 36px;
+  --fs-item-name: 20px;
+  --fs-price: 18px;
+  --fs-body: 16px;
+  --fs-footer: 14px;
+
+  /*  Font weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /*  Spacing */
+  --radius-lg: 15px;
+  --transition-fast: 0.3s;
+}
+
+
+body{
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    margin: 0;
+    font-family: var(--font-serif);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header h1{
+    font-size: 55px;          
+            font-weight: 700;
+            margin: 0;
+            color: #9e4f5c;
+            background: #f7f1e9;
+            text-align: center;
+            padding: 25px 0;
+            
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+
+nav{
+    display: flex;
+            justify-content: center;
+            gap: 35px;
+            padding: 15px 0;
+            background: #9e4f5c;
+            border-bottom: 1px solid #e2d9ce;
+            color: #f7f1e9;   
+}
+
+nav li {
+    list-style: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav li:hover {
+    color: #E6C8E6;
+}
+
+ .hero {
+            background: url("https://images.unsplash.com/photo-1541781774459-bb2af2f05b55")
+            center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-size: var(--fs-hero);
+            font-family: var(--font-serif);
+            font-weight: var(--fw-bold);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            font-family:"Playfair Display", Georgia, "Times New Roman", serif ;
+            margin-top: 70px;
+            margin-bottom: 10px;
+            color: #9e4f5c;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 30px;
+            padding: 40px 60px;
+        }
+
+        .item {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            
+            padding-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .item img {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item-name {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #9e4f5c;
+            font-weight: 600;
+        }
+
+        
+        footer {
+            background: #9e4f5c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 60px;
+            font-size: 14px;
+        }
