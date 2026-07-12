@@ -38,7 +38,15 @@ This project is a lightweight, web-based bakery website focused on simplicity, p
 * WordPress backend for managing content
 * Data can be integrated via APIs or manual embedding depending on implementation
 
-## 📦 Deployment
+
+
+## 📦 Build & Deployment
+* Build command in windows i.e. for local dev env. 
+- powershell -ExecutionPolicy Bypass -File .\package-site.ps1
+
+* CI/CD deployment script. 
+- name: Package static site
+- run: bash ./package-site.sh
 
 * Can be hosted on any static hosting platform (e.g., GitHub Pages, Netlify)
 * WordPress hosted separately on a server
